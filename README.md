@@ -1,5 +1,9 @@
 # FlatMatch Prototype Repository
 
+by Raphael Travnicek, Maurice Lichtenberg, Jema Karachantsava and Julian Strietzel
+
+Have a look into our documentation: [Business](docs/business_idea.pdf), [walk-through](docs/technical_description.pdf) and [screenshots](docs/demo_screenshots.pdf).
+
 ## Run dockerized application
 
 To run the application in a docker container, you need to have docker installed on your machine.  
