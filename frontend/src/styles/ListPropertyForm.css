@@ -1,0 +1,76 @@
+.step-content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.form-box {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin: auto;
+    width: 80%;
+    height: auto;
+}
+
+.navigation-buttons {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 20px;
+}
+
+
+.button {
+    font-size: 20px;
+    padding: 5px 20px;
+    border: 2px solid #4C9CA4;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 50px;
+    position: relative;
+    left: -20px;
+
+}
+
+.button.save {
+    background-color: #4C9CA4;
+    color: white;
+}
+
+.button.save:hover {
+    background-color: #044E54;
+}
+
+.suggestions-list {
+    position: absolute;
+    z-index: 1000;
+    background: white;
+    border: 1px solid #ddd;
+    width: 100%;
+    max-height: 200px;
+    overflow-y: auto;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-top: 2px;
+}
+
+.suggestion-item {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.suggestion-item:hover {
+    background-color: #f0f0f0;
+    color: #044E54;
+
+}
+
+.text-field {
+    width: 100%;
+    margin: 16px 0;
+    background-color: white;
+
+}
+

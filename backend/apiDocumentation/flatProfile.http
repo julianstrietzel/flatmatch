@@ -1,0 +1,46 @@
+# Creates a new flatProfile
+POST localhost:3000/flat-profiles
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NmYwNDFhOTBmYjFlMDU3YjU0NWE4YiIsImFjY291bnRUeXBlIjoibGFuZGxvcmQiLCJpYXQiOjE3MjAzOTIwMTEsImV4cCI6MTcyMDM5NTYxMX0.Enp1Xmlr_e_TZPh5mPEDDGfWcugrndMPEgdoYBsmOAM
+Content-Type: application/json
+
+{
+    "additionalCosts": 3.11,
+    "address": {
+        "street": "Wendl",
+        "buildingNumber": "33",
+        "city": "test",
+        "state": "test",
+        "postalCode": "3000",
+        "country": "Sample Country"
+    },
+    "description": "test",
+    "images": ["https://res.cloudinary.com/flatmatch/image/upload/v1720197329/ifudjhfjyhkws3z47md5w.png"],
+    "name": "test",
+    "numberOfRooms": 3,
+    "price": 33.22,
+    "totalCosts": 500,
+  "requirements": [
+        {"reqKey": "Income Verification", "weight": 5},
+        {"reqKey": "Guarantor", "weight": 5}
+    ],
+    "size": 2333,
+    "tags": [
+        {"tagKey": "Kitchen"},
+        {"tagKey": "Elevator"}
+    ],
+    "type": "house",
+  "_id": "666f05f42a732a3a18d6efeb",
+  "__v": 0
+
+}
+###
+
+###
+# Get all flat profiles created by a specific landlord
+GET http://localhost:3000/flat-profiles/landlords/666f041a90fb1e057b545a8b
+###
+
+###
+# Get a specific flat profile created by a specific landlord
+GET http://localhost:3000/flat-profiles/666f0c13006c7af528790031/landlords/666f041a90fb1e057b545a8b
+###

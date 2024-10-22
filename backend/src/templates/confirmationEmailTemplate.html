@@ -1,0 +1,26 @@
+<div
+    style="font-family: 'Inter', sans-serif; max-width: 600px; margin: auto; padding: 40px; border: 1px solid #e0e0e0; border-radius: 10px; background-color: #ffffff; color: #333333;">
+    <h2 style="color: #000000;">Confirm Your Email Address</h2>
+    <p style="font-size: 16px; color: #4a4a4a;">
+        Hello {{firstName}},<br><br>
+        Thank you for registering with us. Please confirm your email address by clicking the button below.
+    </p>
+    <div style="text-align: center; margin: 30px 0;">
+        <a href="{{confirmationUrl}}"
+            style="background-color: #0070f3; color: white; padding: 14px 24px; text-decoration: none; border-radius: 5px; font-size: 16px; font-weight: 500;">Confirm
+            Email</a>
+    </div>
+    <p style="font-size: 14px; color: #4a4a4a;">
+        If the button above doesn't work, please copy and paste the following link into your web browser:
+    </p>
+    <p style="font-size: 14px; color: #0070f3; word-break: break-all;">
+        <span style="color: #0070f3; text-decoration: none;">{{confirmationUrl}}</span>
+    </p>
+    <p style="font-size: 14px; color: #9e9e9e;">
+        If you did not sign up for this account, you can ignore this email.
+    </p>
+    <hr style="border: none; border-top: 1px solid #e0e0e0; margin: 40px 0;">
+    <p style="font-size: 12px; color: #b0b0b0; text-align: center;">
+        &copy; {{year}} FlatMatch. All rights reserved.
+    </p>
+</div>

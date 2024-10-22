@@ -1,0 +1,23 @@
+
+### Get promising flats for a serach profile
+GET localhost:3000/matches/promising/flatProfiles/6671256f83e14e43c17c82a1?limit=100&page=0
+
+### get promising search profiles
+GET localhost:3000/matches/promising/searchProfiles/666f05f42a732a3a18d6efeb
+
+### LIKE a flat 666f168e476b8d700068b25a
+PUT localhost:3000/matches/tenants/6671256f83e14e43c17c82a1/likes/666f05f42a732a3a18d6efeb
+
+### Approve tenant
+PUT localhost:3000/matches/landlord/666f05f42a732a3a18d6efeb/approvals/6671256f83e14e43c17c82a1
+
+### Disapprove tenant
+PUT localhost:3000/matches/landlord/666f05f42a732a3a18d6efeb/disapprovals/6671256f83e14e43c17c82a1
+
+### Get approved Tenants
+GET localhost:3000/matches/landlord/666f05f42a732a3a18d6efeb/approvals
+
+### Get profiles for an account
+GET localhost:3000/matches/profiles/666eecb809ca820a27ad16a2
+
+###

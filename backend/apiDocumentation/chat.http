@@ -1,0 +1,57 @@
+###
+# Retrieves a chat by its ID
+# Replace the ID in the URL with the ID of the chat you want to retrieve
+GET localhost:3000/chats/667065fc6001592555a83a5b
+###
+
+###
+# Creates a new chat
+# Replace the landlord and tenant IDs in the body with the IDs of the landlord and tenant
+POST localhost:3000/chats
+Content-Type: application/json
+
+{
+  "flatProfile": "666f05f42a732a3a18d6efeb",
+  "searchProfile": "6671256f83e14e43c17c82a1"
+}
+###
+
+###
+# Retrieves all chats where the provided ID is the landlord
+# Replace the ID in the URL with the ID of the landlord
+GET localhost:3000/chats/Landlord/666f041a90fb1e057b545a8b
+###
+
+###
+# Retrieves all chats where the provided ID is the tenant
+# Replace the ID in the URL with the ID of the tenant
+GET localhost:3000/chats/Tenant/666eecb809ca820a27ad16a2
+###
+
+###
+# Adds a message to a chat
+# Replace the chat ID in the URL with the ID of the chat you want to add a message to
+# Replace the sender and content in the body with the sender and content of the message
+POST localhost:3000/chats/667065fc6001592555a83a5b
+Content-Type: application/json
+
+{
+  "sender": "Landlord",
+  "content": "Hello Jane this is a landlord message. Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+}
+###
+
+###
+# get unread message count
+# Replace the chat ID in the URL with the ID of the chat you want to get unread message count
+GET localhost:3000/chats/Tenant/666eecb809ca820a27ad16a2/unread
+
+###
+POST localhost:3000/chats/667065fc6001592555a83a5b/Tenant/read
+
+###
+
+POST localhost:3000/chats/666815df282dd122b57ccd6a/archive
+
+###
+POST localhost:3000/chats/6695806cad5126be1f81db70/66957cbd4694071f12857e51/archive

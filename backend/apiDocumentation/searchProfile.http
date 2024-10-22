@@ -1,0 +1,67 @@
+# Creates a new searchProfile
+POST localhost:3000/search-profiles
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2OGZlNDEyZWVkMzQ3OWU4NTFlZjIyNiIsImFjY291bnRUeXBlIjoidGVuYW50IiwiaWF0IjoxNzIwNzk2OTQ5LCJleHAiOjE3MjA4MDA1NDl9.CsTBWR27W94A1CqBeje0GADw7w3auiHZfU7r8uBHFIw
+Content-Type: application/json
+
+{
+  "description": "A beautiful and spacious apartment in the city center.",
+  "numberOfRooms": 3,
+  "size": 120,
+  "type": "apartment",
+  "tags": [
+    {"tagKey": "Kitchen"},
+    {"tagKey": "Elevator"}
+  ],
+  "requirements": [
+    {"reqKey": "Income Verification", "weight": 5},
+    {"reqKey": "Guarantor", "weight": 5}
+  ],
+  "priceRange": {
+    "min": 1000,
+    "max": 1500
+  },
+  "city": "New York",
+  "country": "USA",
+  "availabilityDate": "2023-08-01T00:00:00.000Z",
+  "_id": "666f05f42a732a3a18d6efeb",
+  "__v": 0
+}
+###
+
+###
+POST localhost:3000/search-profiles
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2OGZlNDEyZWVkMzQ3OWU4NTFlZjIyNiIsImFjY291bnRUeXBlIjoidGVuYW50IiwiaWF0IjoxNzIwODA4NTEyLCJleHAiOjE3MjA4MTIxMTJ9.YJJOPofc_fMACC-38yl0D3vlNAZRBUL3nBePqX7KhYk
+Content-Type: application/json
+
+{
+  "numberOfRooms": 3,
+  "description": "test",
+  "size": 100,
+  "type": "shared_flat",
+  "priceRange": {
+    "min": 240,
+    "max": 460
+  },
+  "city": "Regensburg",
+  "country": "Deutschland",
+  "tags": [
+    {
+      "tagKey": "Guarantor"
+    },
+    {
+      "tagKey": "Bookworm"
+    }
+  ],
+  "requirements": [
+    {
+      "reqKey": "Kitchen",
+      "weight": 3
+    }
+  ],
+  "userId": "668fe412eed3479e851ef226"
+}
+###
+
+###
+GET localhost:3000/search-profiles/6697ec903ef3fa297ef46fe1
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2OTdlYzJhM2VmM2ZhMjk3ZWY0NmZjZCIsImFjY291bnRUeXBlIjoidGVuYW50IiwiaWF0IjoxNzIxMjMyNDM2LCJleHAiOjE3MjEyMzYwMzZ9.AYeJ2cULqH37gQZH-ltvx_ZmzaacOpBnNemO12Bi8s4
